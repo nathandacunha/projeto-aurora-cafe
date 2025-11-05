@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-de-fundo: #A5CBC3;
+    --cor-navbar: #100B00;
+    --cor-fonte: #eeee;
+}
+
+/* responsivo para mobile */
+
+
+/* navbar */
+header #navbar {
+    background-color: var(--cor-navbar);
+}
+
+header #navbar #title h1 {
+    color: var(--cor-fonte);
+    font-weight: 300;
+}
