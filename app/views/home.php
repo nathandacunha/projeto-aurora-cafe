@@ -1,3 +1,7 @@
+<?php
+include('protecao.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -13,7 +17,6 @@
       <div id="title">
         <h1><a href="#">Aurora Café</a></h1>
       </div>
-
       <!-- Checkbox "secreto" que controla o menu -->
       <input type="checkbox" id="menu-toggle">
       <label for="menu-toggle" id="menu-botao">
@@ -27,6 +30,7 @@
           <li><a href="#">Cardápio</a></li>
           <li><a href="#">Configurações</a></li>
           <li><a href="#">Contato</a></li>
+          <li><a href="sair.php">Sair</a></li>
         </ul>
       </div>
     </nav>
@@ -34,7 +38,7 @@
 
   <main>
     <section id="boas-vindas">
-      <h3>Bem-vindo(a) à Aurora Café</h3>
+      <h3>Bem-vindo(a) à Aurora Café, <?php echo $_SESSION['nome_usuario']?></h3>
       <div class="imagens">
         <img src="/public/img/cafe.jpg" alt="">
       </div>

@@ -1,12 +1,12 @@
 <?php
-$host = "localhost";
-$user = "root";
-$senha = "root";
-$db = "aurora_cafe";
+$host = 'localhost';
+$usuario = 'root';
+$senha = '';
+$db = 'db_aurora_cafe';
 
-$conn = new mysqli($host, $user, $senha, $db);
+$conexao = new mysqli($host, $usuario, $senha, $db);
 
-if($conn->connect_error){
-    die ("" . $conn->connect_error);
+if ($conexao->connect_error) {
+    die("Erro na conexão: " . $conexao->connect_error);
 }
 ?>
