@@ -24,7 +24,7 @@ if(isset($_POST['nome_usuario']) || isset($_POST['senha'])){
             $_SESSION['id'] = $usuario['id'];
             $_SESSION['nome_usuario'] = $usuario['nome_usuario'];
 
-            header("Location: views/home.php");
+            header("Location: home.php");
             exit;
         } else {
             echo "Falha ao logar! O nome do usuário ou senha incorretos ";
